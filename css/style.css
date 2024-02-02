@@ -1,0 +1,169 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    height: 5rem;
+    background-color:rgb(26, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.links{
+    display: flex;
+    gap: 40px;
+}
+
+.humburger div{
+    background-color: orange;
+    height: 0.4rem;
+    width: 3rem;
+}
+
+.humburger{
+    display: flex;
+    flex-direction: column;
+gap: 5px;
+cursor: pointer;
+visibility: hidden;
+}
+
+/*/////////Controled by Javascript/////////////////*/
+.HumburgerSettings{
+    background-color:rgb(44, 44, 44);
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+ul li{
+list-style: none;
+font-size: 2.5rem;
+color: aliceblue;
+cursor: pointer;
+}
+
+ul{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 50px;
+}
+
+ul li:hover{
+    border-bottom: 3px solid white;
+}
+
+
+   
+@media screen and (max-width:600px) {
+       .links{
+        visibility: hidden;
+       }
+       .humburger{
+        visibility: visible;
+        margin-left: 200px;
+       }
+}
+
+
+/*//////////////////////SEction* /////////////////////*/
+#image1{
+    height: 30vh;
+    width: 44vh;
+    border-radius: 20px;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+.BTN{
+    margin-top: 10px;
+}
+
+.BTN button{
+    height: 2rem;
+    width: 15em;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(26, 25, 25);
+    cursor: pointer;
+}
+
+.BTN button:hover{
+    color: orange;
+}
+
+@media screen and (max-width:600px) {
+    
+    .BTN{
+        text-align: center;
+    }
+    
+.BTN button{
+    height: 2rem;
+    width: 20em;
+}
+
+.BTN button:hover{
+    color: orange;
+}
+
+section{
+    gap:20px;
+    height: 60vh;
+    margin-top: 40px;
+}
+
+.Text{
+    order: 1;
+}
+
+}
+
+/*/////////////////////Footer//////////*/
+
+footer
+{
+    height: 5rem;
+    background-color: rgb(26, 25, 25);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: orange;
+}
+
+h4{
+    color: orange;
+    font-weight: 100;
+cursor: pointer;
+}
+

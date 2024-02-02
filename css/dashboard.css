@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 5rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vh;
+}
+
+
+
+/*/////////////////////////////////////////////////////*/
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 60px;
+    flex-shrink:0;
+}
+
+
+@media screen and (max-width:600px) {
+    section{
+        height: 170vh;
+    }
+
+    nav h1{
+        margin-left: 100px;
+    }
+
+    .Profile h4{
+        margin-right: 100px;
+    }
+
+   
+    
+}
+
+
+/*//////////////////////////////////*/
+
+.Deposit{
+    height: 10rem;
+    width: 20rem;
+    background-color:rgb(255, 192, 217);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+   flex-direction: column;
+   gap: 110px;
+}
+
+.numbers,.numbers1,.numbers2{
+    margin-left: 250px;
+}
+
+.Widthdraw{
+    height: 10rem;
+    width: 20rem;
+    background-color:rgb(138, 205, 215);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+}
+
+.Balance{
+    height: 10rem;
+    width: 20rem;
+    background-color:rgb(249, 249, 224);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+}
+
+.Two{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/*.........Input Fields ..................*/
+
+.Deposits{
+    height: 10rem;
+    width: 40vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Widthdraws{
+    height: 10rem;
+    width: 40vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+form button{
+    height: 2rem;
+    width: 10rem;
+border: none;
+color: aliceblue;
+background-color: rgb(110, 182, 3);
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+form input{
+    height: 2rem;
+    width: 100%;
+    padding: 2px;
+    color: black;
+
+    outline: blue;
+}
+
+.btn2,.btn1{
+    margin-top: 20px;
+}
+
+
+
+.Inputs{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

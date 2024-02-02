@@ -1,0 +1,199 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    header{
+        height: 5rem;
+        background-color:rgb(26, 25, 25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    
+    .links{
+        display: flex;
+        gap: 40px;
+    }
+    
+    .humburger div{
+        background-color: orange;
+        height: 0.4rem;
+        width: 3rem;
+    }
+    
+    .humburger{
+        display: flex;
+        flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    visibility: hidden;
+    }
+    
+    /*/////////Controled by Javascript/////////////////*/
+    .HumburgerSettings{
+        background-color:rgb(44, 44, 44);
+        height: 100vh;
+        width: 100%;
+        position:fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+    }
+    
+    ul li{
+    list-style: none;
+    font-size: 2.5rem;
+    color: aliceblue;
+    cursor: pointer;
+    }
+    
+    ul{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 50px;
+    }
+    
+    ul li:hover{
+        border-bottom: 3px solid white;
+    }
+    
+    
+       
+    @media screen and (max-width:600px) {
+           .links{
+            visibility: hidden;
+           }
+           .humburger{
+            visibility: visible;
+            margin-left: 200px;
+           }
+    }
+
+    
+
+
+/*//////////SEction//////////////////////////////////////*/
+
+
+section{
+display: flex;
+align-items: center;
+justify-content: center;
+    height: 90vh;
+}
+
+img{
+    height: 20rem;
+    width: 40vh;
+border-radius: 20px;
+}
+
+.Card{
+   box-shadow: 0px 0px 5px 0px;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+   border-radius: 20px;
+   padding: 0px 20px 0px 0px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+h1{
+    font-weight:400;
+}
+
+.info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+h6{
+    margin-top: 10px;
+    cursor: pointer;
+}
+h6:hover{
+    color: orange;
+}
+
+
+form input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.infos{
+ visibility: hidden;
+ position: absolute;
+}
+
+
+@media screen and (max-width:600px) {
+
+    img{
+        width: auto;
+    }
+
+    .Card{
+        height:auto;
+        gap: 0px;
+        padding: 0px 0px 20px 0px;
+    }
+
+
+
+    @media screen and (max-width:1024px) {
+        .infos{
+            right: 100px;
+           }
+        
+    }
+    
+}
+
+
+
+/*/////////////////////Footer//////////*/
+
+footer
+{
+    height: 5rem;
+    background-color: rgb(26, 25, 25);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: orange;
+}
+
+h4{
+    color: orange;
+    font-weight: 100;
+cursor: pointer;
+}
+
+
+
